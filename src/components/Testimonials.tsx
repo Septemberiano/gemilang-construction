@@ -7,25 +7,25 @@ export const Testimonials = (): JSX.Element => {
   const activeTesti = testimonials[activeIdx];
 
   return (
-    <section id="ulasan" className="py-16 sm:py-24 bg-[#eaece4]/50">
+    <section id="ulasan" className="py-16 sm:py-24 bg-[#f1f5f9]/60">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <span className="text-xs font-semibold tracking-widest text-[#cb542d] uppercase">
+            <span className="text-xs font-semibold tracking-widest text-[#3E5BA9] uppercase">
               BUKTI KEPUASAN KLIEN
             </span>
-            <h2 className="mt-3 text-3xl font-medium tracking-tight text-[#222823] sm:text-4xl lg:text-5xl">
+            <h2 className="mt-3 text-3xl font-medium tracking-tight text-[#0f172a] sm:text-4xl lg:text-5xl">
               Cerita Dari Mereka yang Telah Mempercayakan Hunian
             </h2>
           </div>
-          <p className="max-w-xs text-base text-[#697068]">
+          <p className="max-w-xs text-base text-[#64748b]">
             Kepercayaan Anda adalah prioritas terbesar dari setiap pondasi yang kami bangun.
           </p>
         </div>
 
         {/* Featured Testimonial Card */}
-        <div className="mt-12 overflow-hidden rounded-2xl bg-white p-6 sm:p-10 shadow-lg border border-[#dedfd7]">
+        <div className="mt-12 overflow-hidden rounded-2xl bg-white p-6 sm:p-10 shadow-lg border border-[#e2e8f0]">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Image of the completed home */}
             <div className="lg:col-span-5 relative h-64 sm:h-80 w-full overflow-hidden rounded-xl shadow-md">
@@ -34,7 +34,7 @@ export const Testimonials = (): JSX.Element => {
                 alt={activeTesti.projectType}
                 className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
               />
-              <div className="absolute bottom-3 left-3 bg-[#222823]/90 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm">
+              <div className="absolute bottom-3 left-3 bg-[#0f172a]/90 text-white text-xs px-3 py-1.5 rounded-md backdrop-blur-sm">
                 {activeTesti.projectType}
               </div>
             </div>
@@ -50,22 +50,22 @@ export const Testimonials = (): JSX.Element => {
                 </div>
 
                 {/* Quote */}
-                <blockquote className="mt-4 text-lg sm:text-xl font-medium text-[#222823] leading-relaxed italic">
+                <blockquote className="mt-4 text-lg sm:text-xl font-medium text-[#0f172a] leading-relaxed italic">
                   "{activeTesti.comment}"
                 </blockquote>
               </div>
 
               {/* Author Info & Nav Buttons */}
-              <div className="mt-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-[#dedfd7] pt-5">
+              <div className="mt-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-[#e2e8f0] pt-5">
                 <div className="flex items-center gap-4">
                   <img
                     src={activeTesti.avatar}
                     alt={activeTesti.name}
-                    className="h-12 w-12 rounded-full object-cover border-2 border-[#cb542d]"
+                    className="h-12 w-12 rounded-full object-cover border-2 border-[#3E5BA9]"
                   />
                   <div>
-                    <h4 className="font-semibold text-[#222823]">{activeTesti.name}</h4>
-                    <p className="text-xs text-[#697068]">
+                    <h4 className="font-semibold text-[#0f172a]">{activeTesti.name}</h4>
+                    <p className="text-xs text-[#64748b]">
                       {activeTesti.role} • {activeTesti.location}
                     </p>
                   </div>
@@ -80,8 +80,8 @@ export const Testimonials = (): JSX.Element => {
                       onClick={() => setActiveIdx(idx)}
                       className={`h-9 px-3.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
                         activeIdx === idx
-                          ? "bg-[#cb542d] text-white shadow-sm"
-                          : "bg-[#f7f5f0] text-[#222823] hover:bg-[#dedfd7]"
+                          ? "bg-[#3E5BA9] text-white shadow-sm"
+                          : "bg-[#f8fafc] text-[#0f172a] hover:bg-[#e2e8f0]"
                       }`}
                     >
                       Klien {idx + 1}

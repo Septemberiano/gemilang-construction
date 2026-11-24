@@ -15,22 +15,22 @@ export const FAQ = (): JSX.Element => {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-14">
           {/* Left Title */}
           <div className="lg:col-span-5">
-            <span className="text-xs font-semibold tracking-widest text-[#cb542d] uppercase">
+            <span className="text-xs font-semibold tracking-widest text-[#3E5BA9] uppercase">
               SEBELUM MEMULAI
             </span>
-            <h2 className="mt-3 text-3xl font-medium tracking-tight text-[#222823] sm:text-4xl lg:text-5xl">
+            <h2 className="mt-3 text-3xl font-medium tracking-tight text-[#0f172a] sm:text-4xl lg:text-5xl">
               Masih ada
               <br />
               pertanyaan?
             </h2>
-            <p className="mt-4 text-sm leading-relaxed text-[#697068] sm:text-base">
+            <p className="mt-4 text-sm leading-relaxed text-[#64748b] sm:text-base">
               Kami bantu jelaskan proses kerja, biaya, dan tahapan proyek secara transparan tanpa
               istilah teknis yang rumit.
             </p>
           </div>
 
           {/* Right Accordion */}
-          <div className="divide-y divide-[#d4d8ce] border-y border-[#d4d8ce] lg:col-span-7">
+          <div className="divide-y divide-[#e2e8f0] border-y border-[#e2e8f0] lg:col-span-7">
             {faqs.map((faq, idx) => {
               const isOpen = openIndex === idx;
               return (
@@ -44,13 +44,13 @@ export const FAQ = (): JSX.Element => {
                   >
                     <span
                       className={`text-base font-semibold sm:text-lg ${
-                        isOpen ? "text-[#cb542d]" : "text-[#222823]"
+                        isOpen ? "text-[#3E5BA9]" : "text-[#0f172a]"
                       }`}
                     >
                       {faq.question}
                     </span>
                     <span
-                      className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#efefe8] text-xl font-medium text-[#222823]"
+                      className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#f1f5f9] text-xl font-medium text-[#0f172a]"
                       aria-hidden="true"
                     >
                       {isOpen ? "−" : "+"}
@@ -59,7 +59,7 @@ export const FAQ = (): JSX.Element => {
 
                   {isOpen && (
                     <div id={`faq-answer-${idx}`} className="mt-4 pr-12">
-                      <p className="text-sm leading-relaxed text-[#697068] sm:text-base">
+                      <p className="text-sm leading-relaxed text-[#64748b] sm:text-base">
                         {faq.answer}
                       </p>
                     </div>

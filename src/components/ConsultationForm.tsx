@@ -22,12 +22,12 @@ export const ConsultationForm = (): JSX.Element => {
   };
 
   return (
-    <section id="konsultasi" className="bg-[#222823] py-16 text-[#f7f5f0] sm:py-24">
+    <section id="konsultasi" className="bg-[#0f172a] py-16 text-[#f8fafc] sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-14">
           {/* Left Column Copy */}
           <div className="lg:col-span-6 xl:col-span-7">
-            <span className="text-xs font-semibold tracking-widest text-[#dfa17d] uppercase">
+            <span className="text-xs font-semibold tracking-widest text-[#FED7AA] uppercase">
               KONSULTASI GEMILANG CONSTRUCTION
             </span>
             <h2 className="mt-4 text-3xl font-medium tracking-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl">
@@ -37,12 +37,12 @@ export const ConsultationForm = (): JSX.Element => {
               <br />
               dari sini.
             </h2>
-            <p className="mt-6 max-w-lg text-base leading-relaxed text-[#c6cbc3] sm:text-lg">
+            <p className="mt-6 max-w-lg text-base leading-relaxed text-[#cbd5e1] sm:text-lg">
               Diskusikan rencana bangun rumah, renovasi, atau pembuatan kanopi &amp; pagar las besi Anda bersama
               tim arsitek dan teknisi ahli <strong>Gemilang Construction</strong>.
             </p>
-            <div className="mt-8 flex items-center gap-3 text-xs text-[#aeb7ad]">
-              <span className="flex h-2 w-2 rounded-full bg-[#cb542d]" />
+            <div className="mt-8 flex items-center gap-3 text-xs text-[#94a3b8]">
+              <span className="flex h-2 w-2 rounded-full bg-[#3E5BA9]" />
               <span>Konsultasi awal &amp; estimasi biaya 100% gratis. Tanpa komitmen.</span>
             </div>
           </div>
@@ -51,18 +51,18 @@ export const ConsultationForm = (): JSX.Element => {
           <div className="lg:col-span-6 xl:col-span-5">
             <form
               onSubmit={handleSubmit}
-              className="rounded-2xl bg-[#f7f5f0] p-6 text-[#222823] shadow-2xl sm:p-8"
+              className="rounded-2xl bg-[#f8fafc] p-6 text-[#0f172a] shadow-2xl sm:p-8"
             >
-              <h3 className="text-xl font-semibold text-[#222823] sm:text-2xl">
+              <h3 className="text-xl font-semibold text-[#0f172a] sm:text-2xl">
                 Mari kenali rencana Anda.
               </h3>
-              <p className="mt-1 text-xs text-[#697068]">
+              <p className="mt-1 text-xs text-[#64748b]">
                 Isi form singkat ini, tim kami akan merespons dalam 1x24 jam.
               </p>
 
               <div className="mt-6 space-y-4">
                 <div>
-                  <label className="block text-xs font-semibold text-[#222823]">
+                  <label className="block text-xs font-semibold text-[#0f172a]">
                     Nama lengkap
                   </label>
                   <input
@@ -71,13 +71,13 @@ export const ConsultationForm = (): JSX.Element => {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Contoh: Budi Santoso"
-                    className="mt-1.5 h-12 w-full rounded-md border border-[#daddd4] bg-white px-4 text-sm text-[#222823] placeholder-[#7a8077] transition-all focus:border-[#cb542d] focus:ring-1 focus:ring-[#cb542d] focus:outline-none"
+                    className="mt-1.5 h-12 w-full rounded-md border border-[#cbd5e1] bg-white px-4 text-sm text-[#0f172a] placeholder-[#94a3b8] transition-all focus:border-[#3E5BA9] focus:ring-1 focus:ring-[#3E5BA9] focus:outline-none"
                   />
                 </div>
 
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div>
-                    <label className="block text-xs font-semibold text-[#222823]">
+                    <label className="block text-xs font-semibold text-[#0f172a]">
                       Nomor WhatsApp
                     </label>
                     <input
@@ -87,12 +87,12 @@ export const ConsultationForm = (): JSX.Element => {
                       value={formData.whatsapp}
                       onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
                       placeholder="08xxxxxxxxxx"
-                      className="mt-1.5 h-12 w-full rounded-md border border-[#daddd4] bg-white px-4 text-sm text-[#222823] placeholder-[#7a8077] transition-all focus:border-[#cb542d] focus:ring-1 focus:ring-[#cb542d] focus:outline-none"
+                      className="mt-1.5 h-12 w-full rounded-md border border-[#cbd5e1] bg-white px-4 text-sm text-[#0f172a] placeholder-[#94a3b8] transition-all focus:border-[#3E5BA9] focus:ring-1 focus:ring-[#3E5BA9] focus:outline-none"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-[#222823]">
+                    <label className="block text-xs font-semibold text-[#0f172a]">
                       Lokasi proyek
                     </label>
                     <input
@@ -101,20 +101,20 @@ export const ConsultationForm = (): JSX.Element => {
                       value={formData.location}
                       onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                       placeholder="Kota / Kabupaten"
-                      className="mt-1.5 h-12 w-full rounded-md border border-[#daddd4] bg-white px-4 text-sm text-[#222823] placeholder-[#7a8077] transition-all focus:border-[#cb542d] focus:ring-1 focus:ring-[#cb542d] focus:outline-none"
+                      className="mt-1.5 h-12 w-full rounded-md border border-[#cbd5e1] bg-white px-4 text-sm text-[#0f172a] placeholder-[#94a3b8] transition-all focus:border-[#3E5BA9] focus:ring-1 focus:ring-[#3E5BA9] focus:outline-none"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#222823]">
+                  <label className="block text-xs font-semibold text-[#0f172a]">
                     Kebutuhan Pekerjaan
                   </label>
                   <select
                     required
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="mt-1.5 h-12 w-full rounded-md border border-[#daddd4] bg-white px-4 text-sm text-[#222823] transition-all focus:border-[#cb542d] focus:ring-1 focus:ring-[#cb542d] focus:outline-none"
+                    className="mt-1.5 h-12 w-full rounded-md border border-[#cbd5e1] bg-white px-4 text-sm text-[#0f172a] transition-all focus:border-[#3E5BA9] focus:ring-1 focus:ring-[#3E5BA9] focus:outline-none"
                   >
                     <option value="" disabled>
                       Pilih jenis layanan
@@ -133,14 +133,14 @@ export const ConsultationForm = (): JSX.Element => {
 
               <button
                 type="submit"
-                className="mt-6 flex h-13 w-full items-center justify-center rounded-md bg-[#cb542d] px-6 text-sm font-semibold text-white shadow transition-all hover:bg-[#b84825] hover:shadow-md cursor-pointer"
+                className="mt-6 flex h-13 w-full items-center justify-center rounded-md bg-[#3E5BA9] px-6 text-sm font-semibold text-white shadow transition-all hover:bg-[#2F4687] hover:shadow-md cursor-pointer"
               >
                 {submitted
                   ? "✓ Formulir terkirim! Mengalihkan ke WhatsApp..."
                   : "Mulai konsultasi gratis &nbsp;&nbsp;↗"}
               </button>
 
-              <p className="mt-3 text-center text-[11px] text-[#697068]">
+              <p className="mt-3 text-center text-[11px] text-[#64748b]">
                 Informasi Anda aman dan hanya digunakan untuk menindaklanjuti konsultasi proyek.
               </p>
             </form>

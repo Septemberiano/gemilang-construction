@@ -6,15 +6,27 @@ export const Navbar = (): JSX.Element => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[#dedfd7] bg-[#f7f5f0]/95 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-[#e2e8f0] bg-[#f8fafc]/95 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Brand */}
+        {/* Brand with Logo */}
         <a
           href="#top"
-          className="text-2xl font-bold tracking-tight text-[#222823] transition-opacity hover:opacity-80 sm:text-[28px]"
+          className="flex items-center gap-3 transition-opacity hover:opacity-90"
           aria-label="Gemilang Construction beranda"
         >
-          Gemilang Construction<span className="text-[#cb542d]">.</span>
+          <img
+            src="/logo-gemilang.svg"
+            alt="Logo Gemilang"
+            className="h-10 w-auto sm:h-11 object-contain"
+          />
+          <div className="flex flex-col">
+            <span className="text-xl sm:text-2xl font-bold tracking-tight text-[#0f172a] leading-none">
+              GEMILANG<span className="text-[#3E5BA9]">.</span>
+            </span>
+            <span className="text-[10px] sm:text-[11px] font-semibold tracking-wider text-[#64748b] uppercase mt-0.5">
+              Konstruksi &amp; Fabrikasi Las
+            </span>
+          </div>
         </a>
 
         {/* Desktop Navigation */}
@@ -24,7 +36,7 @@ export const Navbar = (): JSX.Element => {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className="text-sm font-medium text-[#222823] transition-colors hover:text-[#cb542d]"
+                  className="text-sm font-medium text-[#0f172a] transition-colors hover:text-[#3E5BA9]"
                 >
                   {item.label}
                 </a>
@@ -37,13 +49,13 @@ export const Navbar = (): JSX.Element => {
         <div className="hidden sm:flex items-center gap-3">
           <a
             href="#transformasi"
-            className="inline-flex h-11 items-center justify-center rounded-md border border-[#dedfd7] bg-[#eaece4] px-4 text-xs font-semibold text-[#222823] transition-colors hover:bg-[#dfe2d7]"
+            className="inline-flex h-11 items-center justify-center rounded-md border border-[#e2e8f0] bg-[#f1f5f9] px-4 text-xs font-semibold text-[#0f172a] transition-colors hover:bg-[#e2e8f0]"
           >
             Sebelum &amp; Sesudah
           </a>
           <a
             href="#konsultasi"
-            className="inline-flex h-11 items-center justify-center rounded-md bg-[#cb542d] px-5 text-xs font-semibold text-white shadow-sm transition-all hover:bg-[#b84825] hover:shadow"
+            className="inline-flex h-11 items-center justify-center rounded-md bg-[#3E5BA9] px-5 text-xs font-semibold text-white shadow-sm transition-all hover:bg-[#2F4687] hover:shadow"
           >
             Konsultasi gratis &nbsp;↗
           </a>
@@ -53,7 +65,7 @@ export const Navbar = (): JSX.Element => {
         <button
           type="button"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="inline-flex items-center justify-center rounded-md p-2 text-[#222823] transition-colors hover:bg-[#eaece4] focus:outline-none focus:ring-2 focus:ring-[#cb542d] lg:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2 text-[#0f172a] transition-colors hover:bg-[#f1f5f9] focus:outline-none focus:ring-2 focus:ring-[#3E5BA9] lg:hidden"
           aria-expanded={mobileMenuOpen}
           aria-label="Buka menu navigasi"
         >
@@ -76,14 +88,14 @@ export const Navbar = (): JSX.Element => {
 
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div className="border-b border-[#dedfd7] bg-[#f7f5f0] px-4 pt-2 pb-6 lg:hidden">
+        <div className="border-b border-[#e2e8f0] bg-[#f8fafc] px-4 pt-2 pb-6 lg:hidden">
           <nav className="flex flex-col gap-2.5">
             {navigationItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="rounded-md px-3 py-2 text-base font-medium text-[#222823] hover:bg-[#eaece4]"
+                className="rounded-md px-3 py-2 text-base font-medium text-[#0f172a] hover:bg-[#f1f5f9]"
               >
                 {item.label}
               </a>
@@ -92,14 +104,14 @@ export const Navbar = (): JSX.Element => {
               <a
                 href="#transformasi"
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex h-11 w-full items-center justify-center rounded-md border border-[#dedfd7] bg-[#eaece4] text-xs font-semibold text-[#222823]"
+                className="flex h-11 w-full items-center justify-center rounded-md border border-[#e2e8f0] bg-[#f1f5f9] text-xs font-semibold text-[#0f172a]"
               >
                 Lihat Transformasi Ruang
               </a>
               <a
                 href="#konsultasi"
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex h-12 w-full items-center justify-center rounded-md bg-[#cb542d] text-center text-sm font-semibold text-white shadow transition-colors hover:bg-[#b84825]"
+                className="flex h-12 w-full items-center justify-center rounded-md bg-[#3E5BA9] text-center text-sm font-semibold text-white shadow transition-colors hover:bg-[#2F4687]"
               >
                 Konsultasi gratis ↗
               </a>

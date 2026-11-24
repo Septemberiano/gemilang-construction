@@ -125,11 +125,11 @@ export const projects: ProjectItem[] = [
   {
     id: "proj-3",
     image:
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1526634140919-468dc3ae3870?auto=format&fit=crop&w=1000&q=80",
     category: "JASA LAS & FABRIKASI",
     categoryKey: "las",
-    title: "Kanopi Kaca Tempered & Pagar Minimalis",
-    description: "Fabrikasi kanopi carport rangka hollow galvanis tebal atap kaca tempered 8mm dan pagar gerbang modern.",
+    title: "Fabrikasi Las Kanopi & Pagar Besi",
+    description: "Pengerjaan bengkel las presisi: rangka hollow galvanis tebal atap kaca tempered & pagar motif modern.",
     specs: {
       area: "Carport & Fasad Depan",
       duration: "10 Hari Pengerjaan",
@@ -195,6 +195,21 @@ export const projects: ProjectItem[] = [
       duration: "3 Bulan",
       location: "Tebet, Jakarta Selatan",
       style: "Industrial Warmth",
+    },
+  },
+  {
+    id: "proj-8",
+    image:
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80",
+    category: "JASA LAS & FABRIKASI",
+    categoryKey: "las",
+    title: "Konstruksi Rangka Baja WF & Mezanin",
+    description: "Pemasangan struktur baja WF kokoh untuk penambahan mezanin lantai dua serta railing balkon minimalis.",
+    specs: {
+      area: "Mezanin & Railing",
+      duration: "14 Hari Pengerjaan",
+      location: "Bintaro Jaya, Tangerang Selatan",
+      style: "Heavy Steel & Railing Work",
     },
   },
 ];

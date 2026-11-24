@@ -15,7 +15,7 @@ import { FloatingWhatsApp } from "./components/FloatingWhatsApp.tsx";
 
 export default function App(): JSX.Element {
   return (
-    <div className="min-h-screen bg-[#f7f5f0] text-[#222823] antialiased selection:bg-[#cb542d] selection:text-white">
+    <div className="min-h-screen bg-[#f8fafc] text-[#0f172a] antialiased selection:bg-[#3E5BA9] selection:text-white">
       <Navbar />
       <main>
         <Hero />

@@ -35,22 +35,22 @@ export const Hero = (): JSX.Element => {
           {/* Left Column: Headline & CTA */}
           <div className="flex flex-col lg:col-span-6 xl:col-span-7">
             {/* Live active consultation pill */}
-            <div className="inline-flex items-center gap-2.5 rounded-full bg-[#cb542d]/10 px-3.5 py-1.5 text-xs font-semibold text-[#cb542d] w-fit">
+            <div className="inline-flex items-center gap-2.5 rounded-full bg-[#3E5BA9]/10 px-3.5 py-1.5 text-xs font-semibold text-[#3E5BA9] w-fit">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#cb542d] opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#cb542d]" />
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#3E5BA9] opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#3E5BA9]" />
               </span>
               <span>KONTRAKTOR BANGUNAN &amp; JASA LAS FABRIKASI BESI</span>
             </div>
 
-            <h1 className="mt-5 text-4xl font-medium tracking-tight text-[#222823] sm:text-5xl lg:text-6xl xl:text-7xl">
+            <h1 className="mt-5 text-4xl font-medium tracking-tight text-[#0f172a] sm:text-5xl lg:text-6xl xl:text-7xl">
               Bangun impian.
               <br />
               Tanpa rasa
               <br />
               <span className="inline-block min-h-[1.2em]">
                 <em
-                  className={`font-serif italic text-[#cb542d] inline-block transition-all duration-300 transform ${
+                  className={`font-serif italic text-[#3E5BA9] inline-block transition-all duration-300 transform ${
                     fadeState === "in"
                       ? "opacity-100 translate-y-0 scale-100"
                       : "opacity-0 -translate-y-2 scale-95"
@@ -61,7 +61,7 @@ export const Hero = (): JSX.Element => {
               </span>
             </h1>
 
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-[#697068] sm:text-lg">
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-[#64748b] sm:text-lg">
               Solusi satu atap dari <strong>Gemilang Construction</strong>: bangun rumah baru, renovasi total, hingga
               fabrikasi las besi (kanopi, pagar, railing tangga, dan konstruksi rangka baja). Terencana, rapi, dan transparan.
             </p>
@@ -70,44 +70,44 @@ export const Hero = (): JSX.Element => {
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
               <a
                 href="#konsultasi"
-                className="inline-flex h-13 items-center justify-center rounded-md bg-[#cb542d] px-7 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#b84825] hover:shadow-md hover:-translate-y-0.5"
+                className="inline-flex h-13 items-center justify-center rounded-md bg-[#3E5BA9] px-7 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#2F4687] hover:shadow-md hover:-translate-y-0.5"
               >
                 Konsultasi Gratis Sekarang &nbsp;↗
               </a>
               <a
                 href="#transformasi"
-                className="inline-flex h-13 items-center justify-center rounded-md border border-[#dedfd7] bg-[#eaece4] px-6 text-sm font-semibold text-[#222823] transition-all hover:bg-[#dfe2d7] hover:-translate-y-0.5"
+                className="inline-flex h-13 items-center justify-center rounded-md border border-[#e2e8f0] bg-[#f1f5f9] px-6 text-sm font-semibold text-[#0f172a] transition-all hover:bg-[#e2e8f0] hover:-translate-y-0.5"
               >
                 Lihat Transformasi Ruang &nbsp;↓
               </a>
             </div>
 
             {/* Trust Metrics Grid */}
-            <div className="mt-10 grid grid-cols-3 gap-4 border-t border-[#dedfd7] pt-6">
+            <div className="mt-10 grid grid-cols-3 gap-4 border-t border-[#e2e8f0] pt-6">
               <div className="group cursor-default">
-                <div className="text-2xl sm:text-3xl font-bold text-[#222823] transition-colors group-hover:text-[#cb542d]">
+                <div className="text-2xl sm:text-3xl font-bold text-[#0f172a] transition-colors group-hover:text-[#3E5BA9]">
                   120+
                 </div>
-                <div className="text-xs text-[#697068] mt-1 font-medium">Proyek Bangun &amp; Las</div>
+                <div className="text-xs text-[#64748b] mt-1 font-medium">Proyek Bangun &amp; Las</div>
               </div>
               <div className="group cursor-default">
-                <div className="text-2xl sm:text-3xl font-bold text-[#222823] transition-colors group-hover:text-[#cb542d]">
+                <div className="text-2xl sm:text-3xl font-bold text-[#0f172a] transition-colors group-hover:text-[#3E5BA9]">
                   100%
                 </div>
-                <div className="text-xs text-[#697068] mt-1 font-medium">Sesuai Kontrak RAB</div>
+                <div className="text-xs text-[#64748b] mt-1 font-medium">Sesuai Kontrak RAB</div>
               </div>
               <div className="group cursor-default">
-                <div className="text-2xl sm:text-3xl font-bold text-[#222823] transition-colors group-hover:text-[#cb542d]">
+                <div className="text-2xl sm:text-3xl font-bold text-[#0f172a] transition-colors group-hover:text-[#3E5BA9]">
                   10 Thn
                 </div>
-                <div className="text-xs text-[#697068] mt-1 font-medium">Garansi Struktur &amp; Las</div>
+                <div className="text-xs text-[#64748b] mt-1 font-medium">Garansi Struktur &amp; Las</div>
               </div>
             </div>
           </div>
 
           {/* Right Column: Hero Image with Floating Cards */}
           <div className="lg:col-span-6 xl:col-span-5">
-            <figure className="relative overflow-hidden rounded-2xl bg-[#222823] shadow-2xl transition-transform duration-300 hover:scale-[1.01]">
+            <figure className="relative overflow-hidden rounded-2xl bg-[#0f172a] shadow-2xl transition-transform duration-300 hover:scale-[1.01]">
               <img
                 src={HERO_IMAGE_URL}
                 alt="Gemilang Construction - Kontraktor & Bengkel Las Profesional"
@@ -116,24 +116,24 @@ export const Hero = (): JSX.Element => {
               />
 
               {/* Tag / Badge */}
-              <div className="absolute top-4 left-4 rounded-full bg-[#f7f5f0]/95 px-3.5 py-1.5 text-[11px] font-bold tracking-wider text-[#222823] shadow-md backdrop-blur-sm">
+              <div className="absolute top-4 left-4 rounded-full bg-white/95 px-3.5 py-1.5 text-[11px] font-bold tracking-wider text-[#0f172a] shadow-md backdrop-blur-sm">
                 GEMILANG CONSTRUCTION
               </div>
 
               {/* Floating Quality Badge */}
-              <div className="absolute top-4 right-4 rounded-lg bg-[#222823]/80 px-3 py-1.5 text-[11px] font-medium text-white shadow-md backdrop-blur-sm hidden sm:block">
+              <div className="absolute top-4 right-4 rounded-lg bg-[#0f172a]/80 px-3 py-1.5 text-[11px] font-medium text-[#FED7AA] shadow-md backdrop-blur-sm hidden sm:block">
                 ★ Bangunan &amp; Las Besi
               </div>
 
               {/* Caption Overlay */}
-              <figcaption className="absolute right-4 bottom-4 left-4 rounded-xl bg-[#222823]/95 p-5 text-white backdrop-blur-md border border-white/10 shadow-lg">
+              <figcaption className="absolute right-4 bottom-4 left-4 rounded-xl bg-[#0f172a]/95 p-5 text-white backdrop-blur-md border border-white/10 shadow-lg">
                 <div className="flex items-center justify-between">
                   <strong className="block text-sm font-semibold text-white sm:text-base">
                     Konstruksi Kuat, Hasil Estetis.
                   </strong>
-                  <span className="text-xs text-[#dfa17d] font-bold">SNI Quality</span>
+                  <span className="text-xs text-[#FED7AA] font-bold">SNI Quality</span>
                 </div>
-                <span className="mt-1 block text-xs text-[#c9cec7] leading-relaxed">
+                <span className="mt-1 block text-xs text-[#cbd5e1] leading-relaxed">
                   Mitra terpercaya untuk pembangunan rumah, renovasi, kanopi, dan fabrikasi pagar besi.
                 </span>
               </figcaption>
